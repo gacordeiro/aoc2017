@@ -25,13 +25,14 @@ apply {
 val kotlin_version: String by extra
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
 dependencies {
-    compile(kotlinModule("stdlib-jdk8", kotlin_version))
-    testCompile("org.jetbrains.kotlin", "kotlin-test-junit", kotlin_version)
-    testCompile("io.kotlintest", "kotlintest", "2.0.7")
+    implementation(kotlinModule("stdlib-jdk8", kotlin_version))
+    testImplementation("org.jetbrains.kotlin", "kotlin-test-junit")
+    testImplementation("org.amshove.kluent", "kluent", "1.33")
 }
 
 configure<JavaPluginConvention> {

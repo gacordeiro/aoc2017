@@ -1,6 +1,6 @@
 package com.tutuland.aoc2017
 
-import io.kotlintest.matchers.shouldEqual
+import org.amshove.kluent.shouldEqual
 import org.junit.Test
 import kotlin.test.assertFailsWith
 
