@@ -11,3 +11,5 @@ fun CharArray.getCircularNextWithStepFrom(index: Int, step: Int): Char =
 data class Coordinate(val x: Int, val y: Int)
 
 fun String.toSortedCharArray() = toCharArray().apply(CharArray::sort)
+
+fun MutableList<*>.canJumpCertainSteps(position: Int, steps: Int): Boolean = (position + steps) in 0 until size

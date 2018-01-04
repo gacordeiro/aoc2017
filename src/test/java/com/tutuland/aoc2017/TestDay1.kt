@@ -18,8 +18,8 @@ class TestDay1 {
         "91212129".firstCaptchaSolution shouldEqual "9"
     }
 
-    @Test fun `firstCaptchaSolution for day1_input`() {
-        day1_input.firstCaptchaSolution shouldEqual "1047"
+    @Test fun `firstCaptchaSolution for inputForDay1`() {
+        inputForDay1.firstCaptchaSolution shouldEqual "1047"
     }
 
     @Test fun `secondCaptchaSolution invalid cases validation`() {
@@ -36,7 +36,7 @@ class TestDay1 {
         "12131415".secondCaptchaSolution shouldEqual "4"
     }
 
-    @Test fun `secondCaptchaSolution for day1_input`() {
-        day1_input.secondCaptchaSolution shouldEqual "982"
+    @Test fun `secondCaptchaSolution for inputForDay1`() {
+        inputForDay1.secondCaptchaSolution shouldEqual "982"
     }
 }

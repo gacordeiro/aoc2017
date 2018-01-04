@@ -13,8 +13,8 @@ class TestDay2 {
         array.calculateChecksum() shouldEqual "18"
     }
 
-    @Test fun `calculateChecksum for day2_input`() {
-        day2_input.calculateChecksum() shouldEqual "32121"
+    @Test fun `calculateChecksum for inputForDay2`() {
+        inputForDay2.calculateChecksum() shouldEqual "32121"
     }
 
     @Test fun `evenDivisibleDiference happy case validation`() {
@@ -27,7 +27,7 @@ class TestDay2 {
         array[2].evenDivisibleDifference() shouldBe 2
     }
 
-    @Test fun `calculateEvenlyDivisibleChecksum for day2_input`() {
-        day2_input.calculateEvenlyDivisibleChecksum() shouldEqual "197"
+    @Test fun `calculateEvenlyDivisibleChecksum for inputForDay2`() {
+        inputForDay2.calculateEvenlyDivisibleChecksum() shouldEqual "197"
     }
 }

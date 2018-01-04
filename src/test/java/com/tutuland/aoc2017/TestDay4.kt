@@ -10,8 +10,8 @@ class TestDay4 {
         "aa bb cc dd aaa".split(" ").countIfValidPassphrase() shouldEqualTo 1
     }
 
-    @Test fun `countValidPassphrases for day4_input`() {
-        day4_input.countValidPassphrases() shouldEqualTo 386
+    @Test fun `countValidPassphrases for inputForDay4`() {
+        inputForDay4.countValidPassphrases() shouldEqualTo 386
     }
 
     @Test fun `countIfValidSecurePassphrase happy case validation`() {
@@ -22,7 +22,7 @@ class TestDay4 {
         "oiii ioii iioi iiio".split(" ").countIfValidSecurePassphrase() shouldEqualTo 0
     }
 
-    @Test fun `countValidSecurePassphrases for day4_input`() {
-        day4_input.countValidSecurePassphrases() shouldEqualTo 208
+    @Test fun `countValidSecurePassphrases for inputForDay4`() {
+        inputForDay4.countValidSecurePassphrases() shouldEqualTo 208
     }
 }

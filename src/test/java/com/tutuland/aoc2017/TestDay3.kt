@@ -11,8 +11,8 @@ class TestDay3 {
         calculateSpiralDistanceFor(1024) shouldEqualTo 31
     }
 
-    @Test fun `calculateSpiralDistanceFor day3_input`() {
-        calculateSpiralDistanceFor(day3_input) shouldEqualTo 475
+    @Test fun `calculateSpiralDistanceFor inputForDay3`() {
+        calculateSpiralDistanceFor(inputForDay3) shouldEqualTo 475
     }
 
     @Test fun `calculateInSpiral(position) happy case validation`() {
@@ -41,7 +41,7 @@ class TestDay3 {
         findNextInSpiralFor(806) shouldEqualTo 880
     }
 
-    @Test fun `findNextInSpiralFor day3_input`() {
+    @Test fun `findNextInSpiralFor inputForDay3`() {
         findNextInSpiralFor(277678) shouldEqualTo 279138
     }
 }
