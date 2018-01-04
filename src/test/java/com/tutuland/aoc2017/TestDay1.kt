@@ -2,41 +2,9 @@ package com.tutuland.aoc2017
 
 import org.amshove.kluent.shouldEqual
 import org.junit.Test
-import kotlin.test.assertFailsWith
 
 
 class TestDay1 {
-    @Test fun `getCircularNextFrom happy case validation`() {
-        "abc".toCharArray().apply {
-            getCircularNextFrom(0) shouldEqual 'b'
-            getCircularNextFrom(1) shouldEqual 'c'
-            getCircularNextFrom(2) shouldEqual 'a'
-        }
-    }
-
-    @Test fun `getCircularNextFrom fails with ArrayIndexOutOfBoundsException if index is greater than size`() {
-        "abc".toCharArray().apply {
-            assertFailsWith<ArrayIndexOutOfBoundsException> { getCircularNextFrom(3) }
-        }
-    }
-
-    @Test fun `getCircularNextWithStepFrom half the size happy case validation`() {
-        "abcdef".toCharArray().apply {
-            getCircularNextWithStepFrom(0, size/2) shouldEqual 'd'
-            getCircularNextWithStepFrom(1, size/2) shouldEqual 'e'
-            getCircularNextWithStepFrom(2, size/2) shouldEqual 'f'
-            getCircularNextWithStepFrom(3, size/2) shouldEqual 'a'
-            getCircularNextWithStepFrom(4, size/2) shouldEqual 'b'
-            getCircularNextWithStepFrom(5, size/2) shouldEqual 'c'
-        }
-    }
-
-    @Test fun `getCircularNextWithStepFrom half the size fails with ArrayIndexOutOfBoundsException if index is greater than size`() {
-        "abcdef".toCharArray().apply {
-            assertFailsWith<ArrayIndexOutOfBoundsException> { getCircularNextWithStepFrom(6, size/2) }
-        }
-    }
-
     @Test fun `firstCaptchaSolution invalid cases validation`() {
         "abc".firstCaptchaSolution shouldEqual "0"
         "1".firstCaptchaSolution shouldEqual "0"

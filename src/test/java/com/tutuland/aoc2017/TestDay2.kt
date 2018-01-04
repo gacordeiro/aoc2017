@@ -14,7 +14,7 @@ class TestDay2 {
     }
 
     @Test fun `calculateChecksum for day2_input`() {
-        day_2_input.calculateChecksum() shouldEqual "32121"
+        day2_input.calculateChecksum() shouldEqual "32121"
     }
 
     @Test fun `evenDivisibleDiference happy case validation`() {
@@ -28,6 +28,6 @@ class TestDay2 {
     }
 
     @Test fun `calculateEvenlyDivisibleChecksum for day2_input`() {
-        day_2_input.calculateEvenlyDivisibleChecksum() shouldEqual "197"
+        day2_input.calculateEvenlyDivisibleChecksum() shouldEqual "197"
     }
 }
