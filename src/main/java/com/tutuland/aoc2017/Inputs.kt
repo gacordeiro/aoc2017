@@ -1604,3 +1604,8 @@ fun inputForDay5(): MutableList<Int> =
        .filter { it.toIntOrNull() != null }
        .map { it.toInt() }
        .toMutableList()
+
+val inputForDay6: List<Int> = "2	8	8	5	4	2	3	1	5	5	1	2	15	13	5	14"
+        .split("\t")
+        .filter { it.toIntOrNull() != null }
+        .map { it.toInt() }
